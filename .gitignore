@@ -1,0 +1,26 @@
+# =========================
+# 1. Python Relevant Ignore
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ignore local env
+venv/
+env/
+.venv/
+
+# ignore local env configuration
+.env
+
+# =========================
+# 2. C++/CUDA complie file Ignore
+# =========================
+*.so
+*.o
+*.dll
+*.core
+core
+
+build/
+bin/

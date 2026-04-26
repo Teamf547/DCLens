@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it as below. A formal paper is currently in preparation and will be updated here upon publication."
+authors:
+  - family-names: "Tang"
+    given-names: "Tingfeng"
+title: "DCLens"
+version: 1.0.0
+date-released: "2026-04-27"
