@@ -123,29 +123,6 @@ contains the importable package. No prebuilt binary availability is assumed.
 ## Architecture
 
 The diagram's names correspond to the following implementation boundaries.
-Connections follow the actual runtime dependencies:
-
-```mermaid
-flowchart TD
-    Input[Data and Setting Input] --> Lens
-    Input --> Config[SimulationConfig]
-    Lens --> Probe[BufferSizeProbe]
-    Probe -. recommended buffer .-> Sim[MagMapSim]
-    Lens --> Sim
-    Config --> Probe
-    Config --> Sim
-    Sim --> PM[PMBuilder: host layout + GPU FFT]
-    PM --> Def[P3MDeflector / direct PP]
-    Def --> IPM
-    IPM --> ASR
-    ASR --> Def
-    ASR --> Raster[Rasterization Shader]
-    Raster --> Map[MagnificationMap / MagnificationMapSeries]
-    Map --> Show[MagMapShow]
-    Map --> LC[IALightCurveExtractor]
-    Path[Source and Path Setting] --> LC
-    LC --> Result[LightCurveResult]
-```
 
 | Stage | Code | Responsibility |
 | --- | --- | --- |
