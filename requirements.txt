@@ -1,14 +1,4 @@
-# some repositories the program needs
-math
-scipy
 numpy
-logging
-matplotlib
-ipywidgets
-IPython
 pandas
-tqdm
-cv2
-
-# This project requires the CUDA Toolkit. 
-# Please ensure that the CUDA, nvcc and gcc compiler are installed and correctly configured in your system's PATH.
+matplotlib
+pybind11

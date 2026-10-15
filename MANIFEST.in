@@ -1,0 +1,4 @@
+include CMakeLists.txt
+include README.md
+include notebooks/Quick_Start_Guide.ipynb
+recursive-include DCLens/src *.cu *.cuh

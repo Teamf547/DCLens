@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=64", "wheel", "pybind11>=2.10", "cmake>=3.24"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "DCLens"
+version = "0.2.0"
+description = "CUDA microlensing maps and streaming light curves"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy", "pandas", "matplotlib"]
+
+[project.optional-dependencies]
+notebook = ["jupyterlab", "ipykernel", "ipympl"]
+analysis = ["scipy", "astropy", "tqdm"]
+
+[tool.setuptools.packages.find]
+include = ["DCLens", "DCLens.*"]
+namespaces = false
+
+[tool.setuptools]
+include-package-data = false
